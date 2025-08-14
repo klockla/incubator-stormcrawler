@@ -70,6 +70,7 @@ under the License.
 		<jackson.version>2.18.1</jackson.version>
 		<tika.version>3.2.2</tika.version>
 		<mockito.version>5.18.0</mockito.version>
+		<slf4j-simple.version>2.0.17</slf4j-simple.version>
 		<jetbrains.annotations.version>26.0.2</jetbrains.annotations.version>
 		<commons.io.version>2.17.0</commons.io.version>
 		<git-code-format-maven-plugin.version>5.3</git-code-format-maven-plugin.version>
@@ -573,11 +574,30 @@ under the License.
 			</dependency>
 
 			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-simple</artifactId>
+				<version>${slf4j-simple.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
 				<groupId>org.apache.storm</groupId>
 				<artifactId>storm-client</artifactId>
 				<version>${storm-client.version}</version>
 				<!-- keep storm out of the jar-with-dependencies -->
 				<scope>provided</scope>
+				<exclusions>
+					<!-- Exclude Log4j SLF4J implementation to avoid conflicts with slf4j-simple in tests -->
+					<exclusion>
+						<groupId>org.apache.logging.log4j</groupId>
+						<artifactId>log4j-slf4j2-impl</artifactId>
+					</exclusion>
+					<!-- Exclude Log4j over SLF4J bridge as we use slf4j-simple for tests -->
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>log4j-over-slf4j</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
