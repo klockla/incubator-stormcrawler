@@ -17,7 +17,7 @@
 package org.apache.stormcrawler.persistence.urlbuffer;
 
 import java.util.Map;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.storm.tuple.Values;
 import org.apache.stormcrawler.Metadata;
 import org.apache.stormcrawler.persistence.EmptyQueueListener;

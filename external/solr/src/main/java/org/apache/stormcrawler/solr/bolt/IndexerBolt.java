@@ -19,7 +19,7 @@ package org.apache.stormcrawler.solr.bolt;
 import static org.apache.stormcrawler.Constants.StatusStreamName;
 
 import java.util.Map;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.solr.common.SolrInputDocument;
 import org.apache.storm.metric.api.MultiCountMetric;
 import org.apache.storm.task.OutputCollector;
