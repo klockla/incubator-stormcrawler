@@ -31,7 +31,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 import org.apache.commons.lang.StringUtils;
@@ -160,11 +159,16 @@ public class StatusUpdaterBolt extends AbstractStatusUpdaterBolt
             fieldNameForRoutingKey = fieldNameForRoutingKey.replaceAll("\\.", "%2E");
         }
 
-        waitAck =
-                Caffeine.newBuilder()
-                        .expireAfterWrite(60, TimeUnit.SECONDS)
-                        .removalListener(this)
-                        .build();
+        String defaultSpec =
+                String.format(
+                        Locale.ROOT,
+                        "expireAfterWrite=%ds",
+                        ConfUtils.getInt(stormConf, "topology.message.timeout.secs", 300));
+
+        String waitAckSpec =
+                ConfUtils.getString(stormConf, "opensearch.status.waitack.cache.spec", defaultSpec);
+
+        waitAck = Caffeine.from(waitAckSpec).removalListener(this).build();
 
         int metrics_time_bucket_secs = 30;
 
