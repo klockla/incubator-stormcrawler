@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
-import org.apache.commons.lang.mutable.MutableBoolean;
+import org.apache.commons.lang3.mutable.MutableBoolean;
 import org.apache.storm.Config;
 import org.apache.storm.utils.MutableObject;
 import org.apache.stormcrawler.Metadata;

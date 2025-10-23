@@ -22,7 +22,7 @@ import static org.apache.stormcrawler.protocol.ProtocolResponse.RESPONSE_IP_KEY;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.regex.Pattern;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.storm.tuple.Tuple;
 import org.apache.stormcrawler.Metadata;
 import org.slf4j.Logger;

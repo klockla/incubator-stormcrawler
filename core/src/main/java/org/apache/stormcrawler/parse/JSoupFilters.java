@@ -30,7 +30,7 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.storm.Config;
 import org.apache.storm.utils.Utils;
 import org.apache.stormcrawler.JSONResource;

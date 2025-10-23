@@ -24,7 +24,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import java.util.TimeZone;
-import org.apache.commons.lang.time.DateUtils;
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.stormcrawler.Metadata;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

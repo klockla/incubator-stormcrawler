@@ -24,7 +24,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.storm.Config;
 import org.apache.stormcrawler.Metadata;
 import org.apache.stormcrawler.protocol.httpclient.HttpProtocol;

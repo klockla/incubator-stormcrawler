@@ -25,7 +25,7 @@ import java.time.format.DateTimeParseException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.storm.Config;
 import org.apache.stormcrawler.proxy.ProxyManager;
 import org.apache.stormcrawler.util.ConfUtils;

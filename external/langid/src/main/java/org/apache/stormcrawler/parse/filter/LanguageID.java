@@ -32,7 +32,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.stormcrawler.Metadata;
 import org.apache.stormcrawler.parse.ParseFilter;
 import org.apache.stormcrawler.parse.ParseResult;

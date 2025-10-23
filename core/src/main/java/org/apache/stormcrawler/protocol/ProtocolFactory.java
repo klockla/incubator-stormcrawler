@@ -18,7 +18,7 @@ package org.apache.stormcrawler.protocol;
 
 import java.net.URL;
 import java.util.HashMap;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.storm.Config;
 import org.apache.stormcrawler.util.ConfUtils;
 import org.apache.stormcrawler.util.InitialisationUtil;
