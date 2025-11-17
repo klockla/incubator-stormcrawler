@@ -157,6 +157,7 @@ List of third-party dependencies grouped by their license type.
         * Jackson dataformat: CBOR (com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.18.2 - https://github.com/FasterXML/jackson-dataformats-binary)
         * Jackson dataformat: Smile (com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.18.2 - https://github.com/FasterXML/jackson-dataformats-binary)
         * Jackson-dataformat-YAML (com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.2 - https://github.com/FasterXML/jackson-dataformats-text)
+        * Jackson datatype: jdk8 (com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.18.1 - https://github.com/FasterXML/jackson-modules-java8/jackson-datatype-jdk8)
         * java-libpst (com.pff:java-libpst:0.9.3 - https://github.com/rjohnsondev/java-libpst)
         * JCL 1.2 implemented over SLF4J (org.slf4j:jcl-over-slf4j:2.0.17 - http://www.slf4j.org)
         * JetBrains Java Annotations (org.jetbrains:annotations:26.0.2-1 - https://github.com/JetBrains/java-annotations)

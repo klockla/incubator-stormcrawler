@@ -692,6 +692,7 @@ under the License.
 		<module>archetype</module>
 		<module>external/opensearch/archetype</module>
 		<module>external/solr/archetype</module>
+		<module>external/presidio</module>
     </modules>
 
 </project>
